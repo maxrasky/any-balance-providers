@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<provider>
+	<api flags="no_browser"/>
+	<id version="3">ab-gaming-bananawars</id>
+	<name>BananaWars (Online game)</name>
+	<description>
+		Gets characteristics from bananawars.ru
+	</description>
+	<author>AnyBalance Team &lt;info@anybalance.ru&gt;</author>
+	<files>
+		<icon></icon>
+		<preferences>preferences.xml</preferences>
+		<js>main.js</js>
+		<js>library.js</js>
+	</files>
+	<counters>
+		<counter id="level" name="Уровень" units="text"/>
+		<counter id="booster" name="Бустеры" type="text"/>
+		<counter id="money" name="Деньги" type=" $"/>
+		<counter id="score" name="Очки" type="text"/>
+		<counter id="mail" name="Почта" type="text"/>
+	</counters>
+	<keywords>Игра</keywords>
+	<type>game</type>
+	<ru>ru</ru>
+</provider>
