@@ -18,6 +18,10 @@ function main(){
     auth_pass: prefs.password
   });
 
+  if(!html || AnyBalance.getLastStatusCode() > 400) {
+    throw new AnyBalance.Error('Ошибка при подключении к сайту провайдера! Попробуйте обновить данные позже.');
+  }
+
   if (!/logout/.test(html)) {
     throw new AnyBalance.Error('Неверный логин или пароль!');
   }
