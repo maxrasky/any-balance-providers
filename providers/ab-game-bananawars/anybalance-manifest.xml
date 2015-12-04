@@ -14,10 +14,10 @@
 		<js>library.js</js>
 	</files>
 	<counters>
-		<counter id="level" name="Уровень" units="text"/>
-		<counter id="booster" name="Бустеры" type="text"/>
-		<counter id="money" name="Деньги" type=" $"/>
-		<counter id="score" name="Очки" type="text"/>
+		<counter id="level" name="Уровень"/>
+		<counter id="booster" name="Бустеры"/>
+		<counter id="money" name="Деньги" prefix="$"/>
+		<counter id="score" name="Очки"/>
 		<counter id="mail" name="Почта" type="text"/>
 	</counters>
 	<keywords>Игра</keywords>
