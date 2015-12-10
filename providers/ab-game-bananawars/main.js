@@ -32,18 +32,11 @@ function main(){
   var counters = ['level', 'booster', 'money', 'score', 'mail'];
 
   for (var i = 0; i < searchValues.length; i++) {
-    var res = getRegEx(searchValues[i]).exec(html);
+    var res = getRegEx(searchValues[i]).exec(html),
+        reReplaces = [/<[^>]*>/g, '', /[^\d\/]+/g, ''];
 
     if (res) {
-      var matches = res[0].match(/<a[^>]*>([^]*?)<\/a>/igm);
-
-      res = matches.map(function(value) {
-        return value.replace(/<[^>]*>/g, '').replace(/[^\d\/]+/g, '');
-      });
-
-      if (res && res.length == 2) {
-        result[counters[i]] = res[1];
-      }
+      getParam(res[0], result, counters[i], /<a[^>]*>([^]*?)<\/a>/igm, reReplaces);
     }
   }
 
