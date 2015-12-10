@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <provider>
 	<api flags="no_browser"/>
-	<id version="3">ab-gaming-bananawars</id>
-	<name>BananaWars (Online game)</name>
+	<id version="3">ab-game-bananawars</id>
+	<name>BananaWars (Онлайн игра)</name>
 	<description>
-		Gets characteristics from bananawars.ru
+		Характеристики банановых войн bananawars.ru
 	</description>
 	<author>AnyBalance Team &lt;info@anybalance.ru&gt;</author>
 	<files>
-		<icon></icon>
+		<icon>icon.png</icon>
 		<preferences>preferences.xml</preferences>
 		<js>main.js</js>
 		<js>library.js</js>
