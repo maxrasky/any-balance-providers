@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <history>
+	<change major_version="2.0" version="71" date="2016-01-29">
+	- Добавлены счетчики: "Бонусный интернет" и "Срок действия бонусного интернета".
+	</change>
+	<change major_version="2.0" version="70" date="2016-01-20">
+	- Исправление ошибки установки провайдера
+	</change>
+	<change major_version="2.0" version="69" date="2016-01-20">
+	Поддержка изменений в процедуре входа
+	</change>
 	<change major_version="2.0" version="68" date="2015-12-21">
 	Исправление входа через мобильный интернет
 	</change>
