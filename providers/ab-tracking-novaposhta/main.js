@@ -24,6 +24,11 @@ function main(){
 	var baseurl = 'https://novaposhta.ua/tracking';
 	var html = AnyBalance.requestGet(baseurl + '/?cargo_number=' + encodeURIComponent(prefs.track_id), addHeaders({Origin:baseurl}));
 
+    if (!html || AnyBalance.getLastStatusCode() > 400) {
+        AnyBalance.trace(html);
+        throw new AnyBalance.Error('Ошибка при подключении к сайту провайдера! Попробуйте обновить данные позже.');
+    }
+
 	if (/не найден|не знайдено/i.test(html)) {
         var error = getParam(html, null, null, /<div\s+class="highlight">([\s\S]*?(?:не знайдено|не найден)[\s\S]*?)<\/p>/i, replaceTagsAndSpaces, html_entity_decode);
         if(error) {
